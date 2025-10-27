@@ -1,13 +1,19 @@
+// server.js
 const express = require('express');
-const app = express();
 const path = require('path');
+
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(__dirname)));
+// Serve all static files (HTML, CSS, JS, etc.)
+app.use(express.static(__dirname));
 
+// Handle all routes by sending index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
+// Start the server
+app.listen(PORT, () => {
+  console.log(`🎶 LunarVox Studio running on port ${PORT}`);
+});
