@@ -1,0 +1,1 @@
+LunarVox Studio v2 (Muse Engine) - Unzip and deploy. Set OPENAI_API_KEY and ELEVENLABS_API_KEY for AI.

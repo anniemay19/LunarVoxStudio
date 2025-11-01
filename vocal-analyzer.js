@@ -1,0 +1,2 @@
+
+(async function(){ const startBtn=document.getElementById('startRec'); if(!startBtn) return; startBtn.onclick=async ()=>{ try{ const s=await navigator.mediaDevices.getUserMedia({audio:true}); alert('Recording demo'); s.getTracks().forEach(t=>t.stop()); }catch(e){ alert('Mic needed'); } }; })();

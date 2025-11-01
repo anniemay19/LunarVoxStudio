@@ -1,0 +1,8 @@
+{
+  "short_name": "LunarVox",
+  "name": "LunarVox Studio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0b0012",
+  "theme_color": "#9b4dff"
+}
